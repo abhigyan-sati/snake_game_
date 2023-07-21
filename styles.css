@@ -1,46 +1,29 @@
-/* Common styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-h1 {
-  text-align: center;
+.game-board {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
 }
 
-a {
-  text-decoration: none;
-  color: #007bff;
+.game-board div {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
 }
 
-footer {
-  text-align: center;
-  margin-top: 20px;
+.game-board .snake {
+    background-color: #00f;
 }
 
-/* index.html styles */
-.play-button {
-  display: block;
-  width: 200px;
-  margin: 20px auto;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  border-radius: 4px;
-}
-
-/* game.html styles */
-#game-canvas {
-  display: block;
-  margin: 20px auto;
-  border: 2px solid #333;
-}
-
-/* about.html styles */
-p {
-  max-width: 600px;
-  margin: 20px auto;
+.game-board .food {
+    background-color: #f00;
 }
